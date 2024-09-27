@@ -1,0 +1,398 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+#navbar a:hover {
+    background-color: var(--primary-color);
+}
+
+#content {
+    max-width: 800px;
+    margin: 80px auto 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+.research-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.research-item:last-child {
+    border-bottom: none;
+}
+
+.research-item h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.research-item h3 {
+    color: var(--secondary-color);
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.research-item ul {
+    padding-left: 20px;
+}
+
+.research-item li {
+    margin-bottom: 5px;
+}
+
+#research-work, #development-experience {
+    margin-bottom: 40px;
+}
+
+#research-work h2, #development-experience h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    padding-left: 20px;
+}
+
+.experience-item li {
+    margin-bottom: 5px;
+}
+.profile-image {
+    width: 200px;  /* 设置宽度为200像素 */
+    height: auto;  /* 保持宽高比 */
+    max-width: 100%;  /* 确保图片不会超出其容器 */
+}
+
+.hero {
+    padding: 50px 0;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero .profile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    margin-right: 40px;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.hero .tagline {
+    font-style: italic;
+    max-width: 400px;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.highlight-item {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-item i {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.cta {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .profile-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .highlights {
+        flex-direction: column;
+    }
+
+    .highlight-item {
+        margin-bottom: 20px;
+    }
+}
+
+.contact {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.contact h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-item i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.contact-item a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+.experience h4 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.experience ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.experience li:before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.experience strong {
+    color: var(--secondary-color);
+}
+
+.about-me-and-facts {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.about-me-and-facts h3, .about-me-and-facts h4 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.about-me-and-facts p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-me-and-facts ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about-me-and-facts li {
+    margin-bottom: 10px;
+}
+
+.about-me-and-facts .quick-facts {
+    display: flex;
+    color: var(--primary-color);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-me-and-facts .quick-facts li {
+    margin-bottom: 5px;
+}
+
+.about-me-and-facts .experience li {
+    padding-left: 20px;
+    position: relative;
+}
+
+.about-me-and-facts .experience li:before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
